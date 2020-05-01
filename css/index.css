@@ -1,45 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
 
-:root{
-    font-family: 'Arvo', serif;
-    --main-color: black;
+:root {
+    font-family: sans-serif;
+    --main-color:rgb(245, 234, 234);
+    --text-main-color: #FFFFFF;
+    --bold-font: 'Anton', sans-serif;
+    --regular-font: 'Open Sans', sans-serif;
+    --bg-color: #101d26;
 }
 
-h1, ul, p{
-    margin: 0;
-    padding: 0;
+body {
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-main-color);
 }
 
-header .banner{
-    font-family: 'Anton', sans-serif;
-    font-size: 15px;
-}  
-header .menu{
-    font-family: 'Anton', sans-serif;
-    font-size: 10px; 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-header nav .top-menu{
+
+header {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
-    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 26px;
+    padding-top: 23px;
 }
-header nav .top-menu li a{
+
+.logo {
+    font-family: var(--bold-font);
     text-transform: uppercase;
-    color: var(--main-color);
+}
+
+header .logo h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header .logo{
+    text-align: center;
+}
+
+header .social a{
+    margin-left: 10px;
+}
+
+header .logo p{
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+}
+
+header .menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header .menu a{
+    color: var(--text-main-color);
     text-decoration: none;
-    padding: 5px;
-}
-header nav .top-menu li a:hover{
-    border: 1px solid var(--main-color);
-}
-
-@media (min-width: 500px;){
-    header nav{
-        display: flex;
-    }
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+    transition: 0.1s border;
 }
 
-header nav .top-menu{
-    flex: 1;
+header .menu a:hover{
+    border-bottom: 2px solid var(--text-main-color)
 }
+
+
+
