@@ -69,5 +69,56 @@ header .menu a:hover{
     border-bottom: 2px solid var(--text-main-color)
 }
 
+main .poster{
+    text-align: center;
+}
 
+main .poster h2{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    
+}
 
+.menu {
+    position: relative;
+}
+
+.menu input[type=checkbox] {
+    opacity: 0;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.menu-burger {
+    z-index: 4;
+    position: inherit;
+}
+
+.menu input[type=checkbox] + * + * {
+    display: none;
+    position: fixed;
+    top:0;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    padding: 35px 10px;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    z-index: 3;
+}
+
+.menu input[type=checkbox]:checked + * + * {
+    display: block;
+    transform: translateY(0);
+}
+
+aside h3{
+    text-align: center;
+    padding-top: 20px;
+    
+}
