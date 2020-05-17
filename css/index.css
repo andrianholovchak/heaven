@@ -127,7 +127,7 @@ main .poster h2{
     font-size: 40px;
     opacity: .8;
 }
-#slider .carousel-caption button{ 
+#slider .carousel-caption button, #event-booking-button{ 
     font-family: var(--bold-font);
     font-size: 30px;
     background-color: transparent;
@@ -137,7 +137,7 @@ main .poster h2{
     transition-duration: 0.4s;
     cursor: pointer;
 }
-#slider .carousel-caption button:hover{
+#slider .carousel-caption button:hover, #event-booking-button:hover{
      background-color: #ee1616;
      color: white;
 }
@@ -146,6 +146,9 @@ main .poster h2{
     grid-template-columns: 1fr 1fr;
     margin: 50px;
     padding: 50px;
+}
+#nightclubphoto{
+    min-width: 300px;
 }
 #description .descriptionText h3{
 color:#f92056;
@@ -174,6 +177,123 @@ font-size: 50px;
   height: 10em;
   text-align: center;
 }
-#menu .menu-description{
-    display: flex;
+
+#upcoming-events{
+    display: grid;
+    grid-template-columns:1fr 1fr  1fr 1fr 1fr;
+    list-style-type: none;
 }
+
+#two{
+    font-family: var(--bold-font);
+    font-size: 60px;
+    color: #00ddff;
+}
+#eight{
+    font-family: var(--bold-font);
+    font-size: 60px;
+    color: #f92056;
+}
+#date{
+    font-family: var(--regular-font);
+    font-size: 15px;
+    opacity: .8;
+    color:  #8a939a;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    /* margin-left: -80px; */
+}
+.data {
+    margin: auto;
+    padding: auto;
+}
+#djname{
+    font-family: var(--bold-font);
+    font-size: 25px;
+}
+#djname, #event-time, #btn, #numbers-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+@media (max-width: 700px){
+    #upcoming-events{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #description{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+hr{
+    background-color: #ffffff;
+    width: 90%;
+}
+#menu{
+    font-family: var(--bold-font);
+    font-size: 60px;
+    color: #f92056;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#beverage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.menu-description li{
+    list-style-type: none;
+}
+ .menu-beverage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.menu-description{
+    background-color: #192834;
+    height: 200px;
+    width: 300px;
+    margin: auto;    
+}
+#beverage h4{
+color: #00ddff;
+font-family: var(--bold-font);
+text-align: center;
+margin-top: 10px;
+}
+
+.beverage-name {
+    color: #b7bfc6;
+    opacity: .8;
+}
+@media(max-width:700px){
+#beverage{
+    display: grid;
+    grid-template-columns:1fr 1fr; 
+}
+}
+@media(max-width:550px){
+    #beverage{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+}
+#gallery h2{
+    font-family: var(--bold-font);
+    font-size: 60px;
+    text-align: center;
+    color: #f92056;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#carouselExampleIndicators{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
