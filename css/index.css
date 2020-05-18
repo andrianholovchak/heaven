@@ -6,7 +6,7 @@
     --text-main-color: #FFFFFF;
     --bold-font: 'Anton', sans-serif;
     --regular-font: 'Open Sans', sans-serif;
-    --bg-color: #101d26;
+    --bg-color: #111d26;
 }
 
 body {
@@ -202,7 +202,6 @@ font-size: 50px;
     display: grid;
     justify-content: start;
     align-items: center;
-    /* margin-left: -80px; */
 }
 .data {
     margin: auto;
@@ -244,6 +243,7 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    width: 100%
 }
 .menu-description li{
     list-style-type: none;
@@ -269,7 +269,7 @@ margin-top: 10px;
     color: #b7bfc6;
     opacity: .8;
 }
-@media(max-width:700px){
+@media(max-width:800px){
 #beverage{
     display: grid;
     grid-template-columns:1fr 1fr; 
@@ -293,7 +293,97 @@ margin-top: 10px;
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 80px;
+}
+.reservation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    min-height: 480px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+.reservation h3{
+    font-family: var(--bold-font);
+    font-size: 50px;
+    margin-left: 30px; 
+    
+}
+.reservation h4{
+    font-family: var(--bold-font);
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;'
+}
+.reservation p{
+    margin-left: 30px;
+    
+}
 
+.formstyle{
+    display: flex;
+    justify-content: center;
+    background-color: #6f5362;
+    opacity: .8;
+    width: 50%;
+    height: 80%; 
+    align-items: center;
+}
+@media(max-width: 850px){
+    .reservation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.formstyle input{
+    margin: 10px;
+    width: 100%;
+}
+#form-button{
+    font-family: var(--bold-font);
+    font-size: 40px;
+    background-color: transparent;
+    color:rgb(207, 190, 190);
+    border: 2px solid #FFFFFF;
+    border-radius: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: auto;
+}
+  #form-button:hover{
+    background-color: #ee1616;
+    color: white;
+  }  
+ footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+}
+.footer-style h4{
+    font-family: var(--bold-font);
+    font-size: 20px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links a{
+    color: var(--text-main-color);
+    text-decoration: none;
+    font-family: var(--regular-font);
+    text-transform: uppercase;
+    transition: 0.1s border;
+}
 
+.footer-links a:hover{
+    border-bottom: 2px solid var(--text-main-color);
+    color: red;
+}
